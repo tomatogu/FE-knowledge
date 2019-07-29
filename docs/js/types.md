@@ -28,3 +28,20 @@ isNaN(x) === NaN  返回 false 表示是数值
 typeof x === 'number' && !(isNaN(x) === NaN)
 ```
 返回结果为 true 则表示 x 为数值类型
+
+___
+
+判断 x 是string、boolean、undefined   直接
+```
+typeof x === 'string' | 'boolean' | 'undefined'
+```
+判断 x 是 null 时需注意
+
+```
+typeof null // 返回 'object'
+```
+可以使用
+
+```
+x === null
+```
